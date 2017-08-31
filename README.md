@@ -71,3 +71,11 @@ EXPOSE 4000
 -- You are exposing the application port to outside of the container
 ```
 
+# Build your application container
+```
+docker build -t your-tag-for-the-applications .
+```
+
+# Run your application container
+```
+docker run -p your-host-machine-port:your-exposed-port-from-docker YourAppName
