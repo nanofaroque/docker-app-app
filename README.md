@@ -79,3 +79,31 @@ docker build -t your-tag-for-the-applications .
 # Run your application container
 ```
 docker run -p your-host-machine-port:your-exposed-port-from-docker YourAppName
+```
+# Sharing docker image
+First Singup an account at hub.docker.com
+
+Now build the app again for your docker account
+```
+docker build -t [your-docker-hub-username]/yourProjectName
+```
+Now login to your docker hub account:
+```
+docker login
+```
+Enter your user name and password
+
+Now push your code to docker hub.
+```
+docker push [your-dockerhub-username]/yourProjectName
+```
+Now you can run your docker image on any server or PC with docker installed
+
+##### Get the image from docker hub
+```
+docker pull
+```
+##### Run the image
+```
+docker run [your-dockerhub-username]/yourProjectName
+```
