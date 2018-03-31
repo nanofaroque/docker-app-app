@@ -75,6 +75,7 @@ EXPOSE 4000
 ```
 docker build -t your-tag-for-the-applications .
 ```
+-t is used to tag the app
 
 # Run your application container
 ```
