@@ -108,3 +108,19 @@ docker pull
 ```
 docker run [your-dockerhub-username]/yourProjectName
 ```
+### Removing all the container and Images
+#### List all containers (only IDs)
+```docker ps -aq
+```
+#### Stop all running containers
+```
+docker stop $(docker ps -aq)
+```
+#### Remove all containers
+```
+docker rm $(docker ps -aq)
+```
+#### Remove all images
+```
+docker rmi $(docker images -q)
+```
