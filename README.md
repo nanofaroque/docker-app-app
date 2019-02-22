@@ -81,6 +81,11 @@ docker build -t your-tag-for-the-applications .
 ```
 docker run -p your-host-machine-port:your-exposed-port-from-docker YourAppName
 ```
+# Inspect your app
+```
+docker ps yourappname
+```
+
 # Sharing docker image
 First Singup an account at hub.docker.com
 
